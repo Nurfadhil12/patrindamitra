@@ -25,7 +25,9 @@ export function Map() {
         />
         <Marker position={position} icon={customIcon}>
           <Popup>
+            <a href='https://www.google.com/maps/place/PT.+Patrinda+Mitra+Abadi/@-7.6927273,109.03433,17.71z/data=!4m12!1m6!3m5!1s0x0:0xfeb12f705b9c30c6!2sPT.+Patrinda+Mitra+Abadi!8m2!3d-7.6917984!4d109.034453!3m4!1s0x0:0xfeb12f705b9c30c6!8m2!3d-7.6917984!4d109.034453'>
             PT. Patrinda Mitra Abadi
+            </a>
           </Popup>
         </Marker>
       </MapContainer>
