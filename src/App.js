@@ -26,7 +26,8 @@ import LogoFooter3 from './assets/img/logo-footer3.png';
 import ImageVisi from './assets/img/image-visi.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 // import { dataDigitalBestSeller } from './data';
 function App() {
   const [navbar, setNavbar] = useState(false);
@@ -51,6 +52,10 @@ function App() {
       setScrollLength(window.scrollY);
     };
     window.addEventListener('scroll', changeBackground);
+  }, []);
+
+  useEffect(() => {
+    AOS.init();
   }, []);
 
   return (
@@ -85,12 +90,12 @@ function App() {
             </div>
           </div>
         </nav>
-        <div className='padding-content'>
+        <div className='padding-content' >
           <div className='content-header' id='beranda'>
-            <h1 className='title-header'>
+            <h1 className='title-header' data-aos="fade-up">
               Kami adalah perusahaan <span className='title-header-tebal'>Kontraktor</span> Bisnis
             </h1>
-            <p className='paraf-header'>
+            <p className='paraf-header' data-aos="fade-up">
               badan usaha berpengalaman yang mengerjakan proyek nasional. PT. PATRINDA MITRA ABADI saat ini memiliki kualifikasi tinggi.
             </p>
             <a href='https://api.whatsapp.com/send/?phone=%2B6283863125919&text&type=phone_number&app_absent=0'>
@@ -102,7 +107,7 @@ function App() {
           </div>
           <div className="container text-center">
             <div className="row bolck-dis">
-              <div className="col">
+              <div className="col" data-aos="fade-up">
                 <h1>
                   1,5k+
                 </h1>
@@ -110,7 +115,7 @@ function App() {
                   Dukungan Mitra
                 </p>
               </div>
-              <div className="col">
+              <div className="col" data-aos="fade-up">
                 <h1>
                   8k+
                 </h1>
@@ -118,7 +123,7 @@ function App() {
                   Ulasan Bagus
                 </p>
               </div>
-              <div className="col">
+              <div className="col" data-aos="fade-up">
                 <h1>
                   2k+
                 </h1>
@@ -129,14 +134,14 @@ function App() {
             </div>
           </div>
           <div className='content-one' id='fitur'>
-            <h1 className='title-one'>
+            <h1 className='title-one' data-aos="fade-up">
               Kami Menyediakan Layanan
             </h1>
-            <p className='paraf-one'>
+            <p className='paraf-one' data-aos="fade-up">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...
             </p>
           </div>
-          <div className="row gx-5 block-dis">
+          <div className="row gx-5 block-dis" data-aos="fade-right">
             <div className="col ">
               <img src={contentOne} alt='' />
             </div>
@@ -149,7 +154,7 @@ function App() {
               </a>
             </div>
           </div>
-          <div className="row gx-5 top-margin direction-respon">
+          <div className="row gx-5 top-margin direction-respon" data-aos="fade-left">
             <div className="col center-title">
               <p className='title-two'>
                 Jasa Pelaksana instalasi Sistem Kontrol dan Instrumentasi
@@ -162,7 +167,7 @@ function App() {
               <img src={contentTwo} alt='' />
             </div>
           </div>
-          <div className="row gx-5 top-margin block-dis">
+          <div className="row gx-5 top-margin block-dis" data-aos="fade-right">
             <div className="col ">
               <img src={contentThree} alt='' />
             </div>
@@ -175,7 +180,7 @@ function App() {
               </a>
             </div>
           </div>
-          <div className="row gx-5 top-margin direction-respon">
+          <div className="row gx-5 top-margin direction-respon" data-aos="fade-left">
             <div className="col center-title">
               <p className='title-two'>
                 Jasa Pelaksana instalasi Sistem Kontrol dan Instrumentasi
@@ -188,12 +193,12 @@ function App() {
               <img src={contentFour} alt='' />
             </div>
           </div>
-          <div className='content-three' id='tentang'>
-            <h1 className='title-one'>
+          <div className='content-three' id='tentang' >
+            <h1 className='title-one' data-aos="fade-up">
               Tentang Kami
             </h1>
             <div className="row top-margin-two">
-              <div className="col">
+              <div className="col" data-aos="fade-up">
                 <div className='grid-one'>
                   <img src={TentangOne} alt='' />
                   <h1 className='title-three'>
@@ -204,7 +209,7 @@ function App() {
                   </p>
                 </div>
               </div>
-              <div className="col">
+              <div className="col"data-aos="fade-up">
                 <div className='grid-one'>
                   <img src={TentangTwo} alt='' />
                   <h1 className='title-three'>
@@ -215,7 +220,7 @@ function App() {
                   </p>
                 </div>
               </div>
-              <div className="col">
+              <div className="col" data-aos="fade-up">
                 <div className='grid-one'>
                   <img src={TentangThree} alt='' />
                   <h1 className='title-three'>
@@ -228,7 +233,7 @@ function App() {
               </div>
             </div>
             <div className="row top-margin-two">
-              <div className="col">
+              <div className="col" data-aos="fade-up">
                 <div className='grid-one'>
                   <img src={TentangFour} alt='' />
                   <h1 className='title-three'>
@@ -239,7 +244,7 @@ function App() {
                   </p>
                 </div>
               </div>
-              <div className="col">
+              <div className="col" data-aos="fade-up">
                 <div className='grid-one'>
                   <img src={TentangFive} alt='' />
                   <h1 className='title-three'>
@@ -250,7 +255,7 @@ function App() {
                   </p>
                 </div>
               </div>
-              <div className="col">
+              <div className="col" data-aos="fade-up">
                 <div className='grid-one'>
                   <img src={TentangSix} alt='' />
                   <h1 className='title-three'>
@@ -263,7 +268,7 @@ function App() {
               </div>
             </div>
             <div className="row top-margin-two">
-              <div className="col">
+              <div className="col" data-aos="fade-up">
                 <div className='grid-one'>
                   <img src={TentangSeven} alt='' />
                   <h1 className='title-three'>
@@ -274,7 +279,7 @@ function App() {
                   </p>
                 </div>
               </div>
-              <div className="col">
+              <div className="col" data-aos="fade-up">
                 <div className='grid-one'>
                   <img src={TentangEight} alt='' />
                   <h1 className='title-three'>
@@ -285,7 +290,7 @@ function App() {
                   </p>
                 </div>
               </div>
-              <div className="col">
+              <div className="col" data-aos="fade-up">
                 <div className='grid-one'>
                   <img src={TentangNine} alt='' />
                   <h1 className='title-three'>
@@ -299,17 +304,17 @@ function App() {
             </div>
           </div>
           <div className='content-four' id='lokasi'>
-            <h1 className='title-one'>
+            <h1 className='title-one' data-aos="fade-up">
               Lokasi
             </h1>
-            <Map />
+            <Map data-aos="fade-up"/>
           </div>
           <div className='content-five' id='misi'>
             <div className="row gx-5 top-margin block-dis">
-              <div className="col ">
+              <div className="col " data-aos="fade-right">
                 <img src={ImageVisi} alt='' />
               </div>
-              <div className="col center-title top-misi">
+              <div className="col center-title top-misi" data-aos="fade-left">
                 <h1 className="title-misi">Misi</h1>
                 <p className='paraf-misi'>
                   Menjadi perusahaan terkemuka di Indonesia yang berkembang secara berkesinambungan serta mampu bersaing di Era Globalisasi
@@ -320,17 +325,17 @@ function App() {
                   Visi
                 </h1>
                 <div className="row bolck-dis">
-                  <div className="col box-shadow">
+                  <div className="col box-shadow" data-aos="fade-right">
                     <p className="text-visi">
                       Ikut berperan aktif dalam pembangunan insfrastruktur di Indonesia
                     </p>
                   </div>
-                  <div className="col box-shadow">
+                  <div className="col box-shadow" data-aos="fade-up">
                     <p className="text-visi">
                       Memberikan pelayanan terbaik untuk meningkatkan kepuasan pelanggan
                     </p>
                   </div>
-                  <div className="col box-shadow">
+                  <div className="col box-shadow" data-aos="fade-left">
                     <p className="text-visi">
                       Meningkatkan kompetensi karyawan sehingga dapat bersaing dan bersinergi dengan perkembangan teknologi
                     </p>
@@ -339,10 +344,10 @@ function App() {
               </div>
             </div>
             <div className="partner">
-              <h1 className='title-one'>
+              <h1 className='title-one' data-aos="fade-up">
                 Kerja Sama
               </h1>
-              <div className='logo-partner'>
+              <div className='logo-partner' data-aos="fade-up">
                 <img src={LogoFooter1} alt='' />
                 <img src={LogoFooter2} alt='' />
                 <img src={LogoFooter3} alt='' />
@@ -351,7 +356,7 @@ function App() {
           </div>
         </div>
         <footer className="bg-black text-white text-center text-lg-start">
-          <div className="container p-4">
+          <div className="container p-4" data-aos="fade-up">
             <div className="row ">
               <div className="col-lg-6 col-md-12 mb-4 mb-md-0">
                 <img src={Logo} alt='' />
