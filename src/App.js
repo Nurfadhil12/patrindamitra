@@ -93,10 +93,11 @@ function App() {
         <div className='padding-content' >
           <div className='content-header' id='beranda'>
             <h1 className='title-header' data-aos="fade-up">
-              Kami adalah perusahaan <span className='title-header-tebal'>Kontraktor</span> Bisnis
+              Kami Perusahaan <span className='title-header-tebal'>Kontraktor dan Supplier</span>
+              {/* melayani dengan sepenuh hati mengutamakna kualitas dan kuantitas menjamin kepuasan pelanggan */}
             </h1>
             <p className='paraf-header' data-aos="fade-up">
-              badan usaha berpengalaman yang mengerjakan proyek nasional. PT. PATRINDA MITRA ABADI saat ini memiliki kualifikasi tinggi.
+              melayani dengan sepenuh hati mengutamakna kualitas dan kuantitas menjamin kepuasan pelanggan
             </p>
             <a href='https://api.whatsapp.com/send/?phone=%2B6283863125919&text&type=phone_number&app_absent=0'>
               <button type="button" className="btn-header">Hubungi Kami</button>
@@ -135,10 +136,10 @@ function App() {
           </div>
           <div className='content-one' id='fitur'>
             <h1 className='title-one' data-aos="fade-up">
-              Kami Menyediakan Layanan
+              Kami Menyediakan Layanan <br/> Kontraktor dan Supplier
             </h1>
             <p className='paraf-one' data-aos="fade-up">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...
+            melayani dengan sepenuh hati mengutamakna kualitas dan kuantitas menjamin kepuasan pelanggan
             </p>
           </div>
           <div className="row gx-5 block-dis" data-aos="fade-right">
@@ -157,7 +158,7 @@ function App() {
           <div className="row gx-5 top-margin direction-respon" data-aos="fade-left">
             <div className="col center-title">
               <p className='title-two'>
-                Jasa Pelaksana instalasi Sistem Kontrol dan Instrumentasi
+                Jasa Pelaksana Pekerjaan Mekanikal dan Elektrikal
               </p>
               <a href='https://api.whatsapp.com/send/?phone=%2B6283863125919&text&type=phone_number&app_absent=0'>
                 <button type="button" className="btn-red">Hubungi Kami</button>
@@ -173,7 +174,7 @@ function App() {
             </div>
             <div className="col center-title">
               <p className='title-two'>
-                Jasa Pelaksana instalasi Sistem Kontrol dan Instrumentasi
+                Jasa Pelaksana Instalasi Minyak dan Gas
               </p>
               <a href='https://api.whatsapp.com/send/?phone=%2B6283863125919&text&type=phone_number&app_absent=0'>
                 <button type="button" className="btn-ungu">Hubungi Kami</button>
@@ -183,7 +184,7 @@ function App() {
           <div className="row gx-5 top-margin direction-respon" data-aos="fade-left">
             <div className="col center-title">
               <p className='title-two'>
-                Jasa Pelaksana instalasi Sistem Kontrol dan Instrumentasi
+                Pengadaan Material Mekanikal Dan Elektrikal
               </p>
               <a href='https://api.whatsapp.com/send/?phone=%2B6283863125919&text&type=phone_number&app_absent=0'>
                 <button type="button" className="btn-kuning">Hubungi Kami</button>
@@ -202,21 +203,21 @@ function App() {
                 <div className='grid-one'>
                   <img src={TentangOne} alt='' />
                   <h1 className='title-three'>
-                    Membantu membangun fasilitas masyarakat
+                    Coring
                   </h1>
                   <p className='paraf-three'>
-                    Perusahaan kontruksi kami membuat beberapa fasilitas untuk masyarakat, ini adalah dokumentasi seseorang sedang mengecek tempat pengeboran di dekat laut.
+                    Coring beton adalah pekerjaan melubangi beton bertulang atau lantai plat beton dengan menggunakan mesin core drill digunakan untuk membuat jalur air , jalur pipa ,jalur kabel , ventilasi , pondasi tiang ,pemasangan angkur dan berbagai kebutuhan lainnya dalam kontruksi bangunan maupun pengambilan uji sampel material
                   </p>
                 </div>
               </div>
-              <div className="col"data-aos="fade-up">
+              <div className="col" data-aos="fade-up">
                 <div className='grid-one'>
                   <img src={TentangTwo} alt='' />
                   <h1 className='title-three'>
-                    Membuat perlengkapan untuk membantu pembangunan
+                    Fabrikasi
                   </h1>
                   <p className='paraf-three'>
-                    Membuat perlengkapan pembangunan, perlengkapan kami sangat menunjang fasilitas pembangunan
+                    sebagai salah satu kegiatan proses mengolah bahan baku material menjadi barang kontruksi dan juga perbaikan bangunan kontruksi yang rusak
                   </p>
                 </div>
               </div>
@@ -224,10 +225,10 @@ function App() {
                 <div className='grid-one'>
                   <img src={TentangThree} alt='' />
                   <h1 className='title-three'>
-                    Diskusi dengan tim untuk menjalin komunikasi
+                    Diskusi
                   </h1>
                   <p className='paraf-three'>
-                    Berdiskusi bersama tim agar tidak ada miss komunikasi saat pekerjaan sedang berjalan. dan menghasilkan kerja yang maksimal
+                  untuk menyelesaikan permasalahan permasalahan pekerjaan dan untuk membina kerjasama antar team kerja
                   </p>
                 </div>
               </div>
@@ -237,10 +238,10 @@ function App() {
                 <div className='grid-one'>
                   <img src={TentangFour} alt='' />
                   <h1 className='title-three'>
-                    Beberapa peralatan untuk menunjang fasilitas kontruksi
+                  Perbaikan Peralatan Rotating 
                   </h1>
                   <p className='paraf-three'>
-                    Peralatan yang kami miliki sangat banyak agar mempermudah pekerjaan kontruksi nanti
+                  Untuk menunjang peforma kerja mesin mesin industri, pompa industri, kompressor dan lain lain
                   </p>
                 </div>
               </div>
@@ -248,10 +249,10 @@ function App() {
                 <div className='grid-one'>
                   <img src={TentangFive} alt='' />
                   <h1 className='title-three'>
-                    Fasilitas kontruksi yang cukup
+                  Quick Release Hook
                   </h1>
                   <p className='paraf-three'>
-                    Cukupnya fasilitas yang kami sediakan akan sangat membantu untuk menngerjakan projek yang akan datang
+                    Penggatian dan perbaikan QRH untuk menunjang kehandalan operasional penyandaran kapal di dermaga
                   </p>
                 </div>
               </div>
@@ -259,10 +260,10 @@ function App() {
                 <div className='grid-one'>
                   <img src={TentangSix} alt='' />
                   <h1 className='title-three'>
-                    Bekerja langsung di lapangan bersama dengan tim
+                    Pekerjaan di lapangan
                   </h1>
                   <p className='paraf-three'>
-                    Bekerja di lapangan membangun pemasangan pita besar di dalam tanah.
+                    Pekerjaan di lapangan memerlukan kerjasama team yang baik untuk mencapai target sesuai kebutuhan klien
                   </p>
                 </div>
               </div>
@@ -272,10 +273,10 @@ function App() {
                 <div className='grid-one'>
                   <img src={TentangSeven} alt='' />
                   <h1 className='title-three'>
-                    Pengecekan fasilitas agar tidak ada yang kesalahan nantinya
+                    Final Check
                   </h1>
                   <p className='paraf-three'>
-                    Pengecekan berkala agar tidak ada kecelakaan atau hal hal yang tidak diinginkan terjadi
+                    Pemeriksaan akhir terhadap setiap pekerjaan untuk memastikan hasil pekerjaan sesuai quality dan quantity
                   </p>
                 </div>
               </div>
@@ -283,10 +284,10 @@ function App() {
                 <div className='grid-one'>
                   <img src={TentangEight} alt='' />
                   <h1 className='title-three'>
-                    Pengecekan dan perakitan kabel
+                    Ketelitian 
                   </h1>
                   <p className='paraf-three'>
-                    Kami juga mengecek kabel dan merakit kabel untuk pemasangan hal hal yang berbau kelistrikan
+                    Dibutuhkan ketelitian dan ketepatan dalam menyelesaikan permasalahan yang timbul dalam tiap pekerjaan
                   </p>
                 </div>
               </div>
@@ -294,10 +295,10 @@ function App() {
                 <div className='grid-one'>
                   <img src={TentangNine} alt='' />
                   <h1 className='title-three'>
-                    Membangun fasilitas yang di lakukan di tengah laut
+                    Peralatan
                   </h1>
                   <p className='paraf-three'>
-                    Pembangunan fasilitas di tengah laut sering terjadi, dan kami memiliki peralatan yang dapat menunjang aktifitas projek ini
+                    Penggunaan peralatan yang tepat dan sesuai kebutuhan menunjang kelancaran pekerjaan baik di darat maupun di perairan
                   </p>
                 </div>
               </div>
@@ -307,7 +308,7 @@ function App() {
             <h1 className='title-one' data-aos="fade-up">
               Lokasi
             </h1>
-            <Map data-aos="fade-up"/>
+            <Map data-aos="fade-up" />
           </div>
           <div className='content-five' id='misi'>
             <div className="row gx-5 top-margin block-dis">

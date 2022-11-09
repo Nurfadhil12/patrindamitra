@@ -9,7 +9,9 @@
 
 
 .padding-content {
-  padding: 20px 60px;
+  padding: 20px 56px;
+  width: 90%;
+    margin: auto;
 }
 
 .navbar-toggler {
