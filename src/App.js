@@ -61,7 +61,7 @@ function App() {
   return (
     <div className="App">
       <div className='bg-nav'>
-        <nav className={navbar ? "navbar navbar-expand-lg fixed-nav" : "navbar navbar-expand-lg padding-content"}>
+        <nav className={navbar ? "navbar navbar-expand-lg fixed-nav" : "navbar navbar-expand-lg pad-tok"}>
           <div className="container-fluid ">
             <a className="navbar-brand" href="#">
               <img src={Logo} alt='' />
